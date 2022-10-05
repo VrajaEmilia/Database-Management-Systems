@@ -1,0 +1,7 @@
+USE University
+GO
+
+BEGIN TRAN
+WAITFOR DELAY '00:00:05'
+INSERT INTO Student VALUES ('firstname','lastname',1)
+COMMIT TRAN
